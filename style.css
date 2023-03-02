@@ -47,18 +47,35 @@ footer {
 }
 
 .container {
+    position: relative;
     width: 1080px;
     border: solid;
     padding: 20px;
 }
 
 #paint {
+    top: 10px;
+    right: 10px;
     width: 80%;
-    max-width: 1000px;
-    height: 600px;
+    z-index: 1;
+}
+
+#w2 {
+    top: 10px;
+    right: 10px;
+    width: 80%;
+    z-index: 2;
+}
+
+#w3 {
+    top: 10px;
+    left: 10px;
+    width: 80%;
+    z-index: 3;
 }
 
 .win98popup {
+    position: absolute;
     margin-top: 20px;
     display: flex;
     flex-flow: column nowrap;
@@ -67,8 +84,8 @@ footer {
     background: #c2c6ca;
     font-size: 12px;
     -webkit-font-smoothing: none;
-    width: 265px;
-    height: 118px;
+    max-width: 1000px;
+    height: 600px;
     box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px #c2c6ca, inset -1px -1px #85898d, inset 2px 2px white;
 }
 
@@ -172,17 +189,17 @@ button:active img {
         width: 720px;
     }
 
-    #paint {
+    #paint, #w2, #w3 {
         width: 90%;
     }
   }
 
 @media (max-width: 720px) {
     .container {
-        width: 600px;
+        width: 100%;
     }
 
-    #paint {
+    #paint, #w2, #w3 {
         width: 100%;
     }
   }
