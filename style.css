@@ -47,14 +47,14 @@ footer {
 }
 
 .container {
-    width: 1440px;
-    max-width: 1440px;
+    width: 1080px;
+    border: solid;
+    padding: 20px;
 }
 
-/* */
-
 #paint {
-    width: 800px;
+    width: 80%;
+    max-width: 1000px;
     height: 600px;
 }
 
@@ -166,3 +166,26 @@ button:active p,
 button:active img {
     transform: translateX(1px) translateY(1px);
 }
+
+@media (max-width: 1080px) {
+    .container {
+        width: 720px;
+    }
+
+    #paint {
+        width: 90%;
+    }
+  }
+
+@media (max-width: 720px) {
+    .container {
+        width: 600px;
+    }
+
+    #paint {
+        width: 100%;
+    }
+  }
+
+
+  
