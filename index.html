@@ -12,94 +12,120 @@
 <body>
 
     <main>
-        <div class="container">
-            <div id="paint" class="win98popup shadow">
-                <div class="bar">
-                    <p>Test</p>
-                    <button class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
-                            fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                            <path
-                                d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
-                        </svg>
-                    </button>
-                </div>
-                <section>
-                    
-                </section>
-            </div>
-            <div id="w2" class="win98popup shadow">
-                <div class="bar">
-                    <p>Test</p>
-                    <button class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
-                            fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                            <path
-                                d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
-                        </svg>
-                    </button>
-                </div>
-                <section>
-                    
-                </section>
-            </div>
-            <div id="w3" class="win98popup shadow">
-                <div class="bar">
-                    <p>Test</p>
-                    <button class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
-                            fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                            <path
-                                d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
-                        </svg>
-                    </button>
-                </div>
-                <section>
-                    
-                </section>
-            </div>
-            <div class="win98popup shadow">
-                <div class="bar">
-                    <p>Paint</p>
-                    <button class="shadow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
-                            fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                            <path
-                                d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
-                        </svg>
-                    </button>
-                </div>
-                <section>
-                    <p>Save changes to untitled?</p>
-                </section>
-                <div class="buttons">
-                    <button class="shadow"><img
-                            src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
-                            width="66.9" height="15">
-                        <p><u>Y</u>es</p>
-                    </button>
-                    <button class="shadow"><img
-                            src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
-                            width="66.9" height="15">
-                        <p><u>N</u>o</p>
-                    </button>
-                    <button class="shadow"><img
-                            src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
-                            width="66.9" height="15">
-                        <p>Cancel</p>
-                    </button>
-                </div>
-            </div>
 
+        <div class="icons">
+            <div class="icon">
+                <img src="/images/my-computer.png" alt="my-computer">
+                <p>My Computer</p>
+            </div>
+            <div class="icon">
+                <img src="/images/network.png" alt="my-computer">
+                <p>Network <br>Neighborhood </p>
+            </div>
+            <div class="icon">
+                <img src="/images/dvd-drive.png" alt="my-computer">
+                <p>DVD drive</p>
+            </div>
+            <div class="icon">
+                <img src="/images/folder.png" alt="my-computer">
+                <p>Secret Stuff</p>
+            </div>
+            <div class="icon">
+                <img src="/images/recycle-bin.png" alt="my-computer">
+                <p>Recycle Bin</p>
+            </div>
+        </div>
+
+        <div id="paint" class="win98popup shadow" onclick="putPaintOnTop()">
+            <div class="bar">
+                <p>Paint</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <section>
+
+            </section>
+        </div>
+        <div id="w2" class="win98popup shadow" onclick="putW2OnTop()">
+            <div class="bar">
+                <p>Test</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <section>
+
+            </section>
+        </div>
+        <div id="w3" class="win98popup shadow" onclick="putW3OnTop()">
+            <div class="bar">
+                <p>Test</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <section>
+
+            </section>
+        </div>
+        <div id="confirm" class="win98popup shadow" onclick="putConfirmOnTop()">
+            <div class="bar">
+                <p>Confirm</p>
+                <button class="shadow" onclick="hideConfirm()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <section>
+                <p>Save changes to untitled?</p>
+            </section>
+            <div class="buttons">
+                <button class="shadow"><img
+                        src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
+                        width="66.9" height="15">
+                    <p><u>Y</u>es</p>
+                </button>
+                <button class="shadow"><img
+                        src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
+                        width="66.9" height="15">
+                    <p><u>N</u>o</p>
+                </button>
+                <button class="shadow"><img
+                        src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt=""
+                        width="66.9" height="15">
+                    <p>Cancel</p>
+                </button>
+            </div>
         </div>
     </main>
 
     <footer>
-        <img id="start-menu-logo" src="/images/start-menu-logo.jpg" alt="">
+        <button id="start-menu-logo" src="/images/start-menu-logo.jpg" alt="">
 
     </footer>
 
     <script src="/JS/main.js"></script>
+    <script src="/JS/confirm.js"></script>
+    <script src="/JS/paint.js"></script>
+    <script src="/JS/w2.js"></script>
+    <script src="/JS/w3.js"></script>
+
 </body>
 
 </html>

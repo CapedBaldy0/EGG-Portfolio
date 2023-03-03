@@ -14,6 +14,7 @@ html {
 
 body {
     font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 12px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -40,10 +41,39 @@ footer {
     padding: 2px;
 }
 
+.icons {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    align-items: center;
+    color: white;
+}
+
+.icons .icon {
+    text-align: center;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.icons .icon img {
+    width: 40px;
+}
+
 #start-menu-logo {
+    background-image: url("/images/start-menu-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     cursor: pointer;
-    width: 80px;
+    width: 105px;
     height: 100%;
+}
+
+#start-menu-logo :active {
+    transform: translateX(5px) translateY(5px);
 }
 
 .container {
@@ -54,28 +84,35 @@ footer {
 }
 
 #paint {
+    z-index: 3;
     top: 10px;
-    right: 10px;
+    left: 10px;
     width: 80%;
-    z-index: 1;
 }
 
 #w2 {
     top: 10px;
     right: 10px;
     width: 80%;
-    z-index: 2;
 }
 
 #w3 {
     top: 10px;
     left: 10px;
     width: 80%;
-    z-index: 3;
+}
+
+#confirm {
+    width: 300px;
+    height: 170px;
+    top: 45%;
+    left: 30%;
+    z-index:  2;
 }
 
 .win98popup {
     position: absolute;
+    z-index: 1;
     margin-top: 20px;
     display: flex;
     flex-flow: column nowrap;
@@ -94,6 +131,7 @@ footer {
 }
 
 .win98popup .bar {
+    cursor: move;
     display: flex;
     flex-flow: row nowrap;
     font-weight: bold;
@@ -189,20 +227,21 @@ button:active img {
         width: 720px;
     }
 
-    #paint, #w2, #w3 {
+    #paint,
+    #w2,
+    #w3 {
         width: 90%;
     }
-  }
+}
 
 @media (max-width: 720px) {
     .container {
         width: 100%;
     }
 
-    #paint, #w2, #w3 {
-        width: 100%;
+    #paint,
+    #w2,
+    #w3 {
+        width: 90%;
     }
-  }
-
-
-  
+}
