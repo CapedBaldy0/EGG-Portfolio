@@ -20,7 +20,7 @@ function dragElement2(elmnt) {
     }
 
     function elementDrag(e) {
-
+ 
         putConfirmOnTop();
 
         e = e || window.event;
@@ -50,5 +50,5 @@ function putConfirmOnTop() {
 }
 
 function hideConfirm() {
-    document.getElementById("confirm").style.zIndex = "-1";
+    document.getElementById("confirm").style.zIndex = "-10";
 }
