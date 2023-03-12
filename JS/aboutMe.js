@@ -1,9 +1,9 @@
 // Make the DIV element draggable:
-dragElement1(document.getElementById("paint"));
+dragElement1(document.getElementById("aboutMe"));
 
 function dragElement1(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (elmnt.querySelector(".bar")) {
+    if (elmnt.querySelector(".bar") != null) {
         // if present, the header is where you move the DIV from:
         elmnt.querySelector(".bar").onmousedown = dragMouseDown;
     }
@@ -21,7 +21,7 @@ function dragElement1(elmnt) {
 
     function elementDrag(e) {
 
-        putPaintOnTop();
+        //putPaintOnTop();
 
         e = e || window.event;
         e.preventDefault();
@@ -31,7 +31,7 @@ function dragElement1(elmnt) {
         pos3 = e.clientX;
         pos4 = e.clientY;
         // set the element's new position:
-        elmnt.style.top = (elmnt.offsetTop - 20 - pos2) + "px";
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     }
 
