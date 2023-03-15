@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Determination Mono";
+    src: url("./DTM-Mono.otf");
+}
+
 *,
 *::before,
 *::after {
@@ -28,7 +33,6 @@ main {
 
 footer {
     flex-shrink: 0;
-    display: flex;
     border: solid;
     border-width: 2px;
     border-top-color: white;
@@ -36,8 +40,62 @@ footer {
     border-bottom-color: black;
     border-right-color: black;
     height: 40px;
-    background-color: grey;
+    width: 100%;
+    background-color: rgb(158, 158, 158);
     padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    background-color: rgb(174, 174, 174);
+    border: solid;
+    border-width: 2px;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: white;
+    border-right-color: white;
+    width: 200px;
+    height: 100%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.item img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#start-menu-logo {
+    width: 100px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#start-menu-logo button {
+    border: none;
+    background-image: url("/images/start-menu-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#start-menu-logo button :active {
+    transform: translateX(5px) translateY(5px);
+}
+
+#aboutMeTask {
+    display: flex;
+}
+
+#skillsTask {
+    display: none;
 }
 
 .icons {
@@ -59,24 +117,7 @@ footer {
 
 .icons .icon img {
     width: 40px;
-}
-
-#start-menu-logo {
-    background-image: url("/images/start-menu-logo.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    width: 100px;
-    height: 100%;
-}
-
-#start-menu-logo :active {
-    transform: translateX(5px) translateY(5px);
-}
-
-#aboutMe {
-    z-index: 1;
-    width: 80%;
+    mix-blend-mode: normal;
 }
 
 #confirm {
@@ -84,7 +125,7 @@ footer {
     height: 170px;
     top: 45%;
     left: 30%;
-    z-index:  2;
+    z-index: 2;
 }
 
 .win98popup {
@@ -93,13 +134,14 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
     background: #c2c6ca;
     font-size: 12px;
     -webkit-font-smoothing: none;
     max-width: 1000px;
+    width: 90%;
     height: 700px;
     box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px #c2c6ca, inset -1px -1px #85898d, inset 2px 2px white;
+    margin-bottom: 30px;
 }
 
 .win98popup .shadow {
@@ -117,6 +159,12 @@ footer {
     background: #00a;
     padding: 2px 3px 3px;
     margin: 3px 2px 1px 3px;
+}
+
+.win98popup .content {
+    overflow: auto;
+    flex-grow: 1;
+    padding: 4%;
 }
 
 .win98popup .bar p {
@@ -195,4 +243,173 @@ button:active {
 button:active p,
 button:active img {
     transform: translateX(1px) translateY(1px);
+}
+
+#me-img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -10px;
+    overflow: hidden;
+    background-image: url('./images/me.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 6rem;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+#aboutMe {
+    z-index: 1;
+    display: flex;
+}
+
+#aboutMe .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Determination Mono';
+    text-align: center;
+    color: white;
+    height: 400px;
+    background-image: url("/images/neon-back.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4%;
+}
+
+#aboutMe .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#aboutMe .main div {
+    text-align: justify;
+    max-width: 600px;
+}
+
+#skills {
+    z-index: 2;
+    display: none;
+    max-width: 600px;
+    max-height: 480px;
+}
+
+#skills .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#skills .item-list img {
+    width: 40px;
+    height: 40px;
+}
+
+#skills .item { 
+    width: 140px;
+    height: 50px;
+    padding: 5px;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+}
+
+#skills .content section {
+    flex-basis: 33%;
+}
+
+#workExperience {
+    z-index: 3;
+    display: none;
+    max-width: 800px;
+    max-height: 1000px;
+}
+
+#projects {
+    z-index: 4;
+    display: none;
+}
+
+#projects .content {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Determination Mono';
+    text-align: center;
+    color: white;
+    height: 90%;
+    background-image: url("/images/retro-wave.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactMe {
+    z-index: 5;
+    display: none;
+    max-width: 600px;
+    max-height: 420px;
+}
+
+#contactMe .content {
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactMe .content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contactMe .content form * {
+    margin-bottom: 5px;
+}
+
+#contactMe .content .links {
+    margin-top: 5px;
+    padding: 5px 5px 0px 5px;
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactMe .content .links a {
+    margin-right: 10px;
+}
+
+#contactMe .content .links img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 670px) {
+
+    h1 {
+        font-size: 4rem;
+    }
 }

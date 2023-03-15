@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timeline.css">
 
-    <title>Efros Gheorghe Portfolio</title>
+    <title>Efros Gheorghe</title>
 </head>
 
 <body>
@@ -14,29 +15,29 @@
     <main>
 
         <div class="icons">
-            <div class="icon" ondblclick="showAboutMe()">
+            <div id="aboutMeIcon" class="icon">
                 <img src="/images/my-computer.png" alt="my-computer">
                 <p>About Me</p>
             </div>
-            <div class="icon">
+            <div id="skillsIcon" class="icon">
                 <img src="/images/network.png" alt="my-computer">
-                <p>Network <br>Neighborhood </p>
+                <p>My Skills</p>
             </div>
-            <div class="icon">
+            <div id="workExperienceIcon" class="icon">
+                <img src="/images/computer.jpg" alt="my-computer">
+                <p>My Work Experience</p>
+            </div>
+            <div id="projectsIcon" class="icon">
                 <img src="/images/dvd-drive.png" alt="my-computer">
-                <p>DVD drive</p>
+                <p>My Projects</p>
             </div>
-            <div class="icon">
+            <div id="contactMeIcon" class="icon">
                 <img src="/images/folder.png" alt="my-computer">
-                <p>Secret Stuff</p>
-            </div>
-            <div class="icon">
-                <img src="/images/recycle-bin.png" alt="my-computer">
-                <p>Recycle Bin</p>
+                <p>Contact me</p>
             </div>
         </div>
 
-        <div id="aboutMe" class="win98popup shadow" onclick="putPaintOnTop()">
+        <div id="aboutMe" class="win98popup shadow">
             <div class="bar">
                 <p>About Me</p>
                 <button class="shadow">
@@ -47,9 +48,199 @@
                     </svg>
                 </button>
             </div>
-            <section>
+            <div class="content">
+                <div class="top">
+                    <div id="me-img"></div>
+                    <h1>Efros Gheorghe</h1>
+                </div>
+                <div class="main">
+                    <div>
+                        <p>
+                            Hello, I'm a software developer based in Chișinău, Moldova.
+                            I am passionate about finding simple solutions to complex problems,
+                            also like creating beautiful and intuitive designs.
+                            Currently am at the beginning of my software development career,
+                            always learning and striving to become better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="win98popup shadow">
+            <div class="bar">
+                <p>My Skills</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="content">
+                <section>
+                    <h2>Programming languages</h2>
+                    <div class="item-list">
+                        <div class="item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" />
+                            <p>C#</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" />
+                            <p>SQL</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" />
+                            <p>HTML</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" />
+                            <p>CSS</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Frameworks</h2>
+                    <div class="item-list">
+                        <div class="item">
+                            <img
+                                src="https://img.icons8.com/external-those-icons-flat-those-icons/256/external-Dot-Net-Logo-social-media-those-icons-flat-those-icons.png" />
+                            <p>.Net Framework</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/dot-net-core-7.svg" />
+                            <p>.Net Core</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="https://img.icons8.com/external-those-icons-flat-those-icons/256/external-Dot-Net-Logo-social-media-those-icons-flat-those-icons.png" />
+                            <p>ASP.NET</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="https://codeopinion.com/wp-content/uploads/2018/07/Bitmap-MEDIUM_ASP.NET-Core-Logo_2colors_Square_RGB.png" />
+                            <p>ASP.NET Core</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" />
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Tools & Tehnologies</h2>
+                    <div class="item-list">
+                        <div class="item">
+                            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" />
+                            <p>Git</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO.png" />
+                            <p>Linux</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="workExperience" class="win98popup shadow">
+            <div class="bar">
+                <p>My Work Experience</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="content">
+                <!-- The Timeline -->
 
-            </section>
+                <ul class="timeline">
+
+                    <!-- Item 1 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">???</span>
+                                <span class="time-wrapper"><span class="time">2023 - future</span></span>
+                            </div>
+                            <div class="desc">At my future job i will be doing ...</div>
+                        </div>
+                    </li>
+
+                    <!-- Item 2 -->
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">BPAY SRL</span>
+                                <span class="time-wrapper"><span class="time">Jun 2022 - Present</span></span>
+                            </div>
+                            <div class="desc">My first job. Here I developed my programming skills. Learned to work on Blazor, created WEB APIs, made designs with html, css and bootstrap.</div>
+                        </div>
+                    </li>
+
+                    <!-- Item 3 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">C.E.I.T.I.</span>
+                                <span class="time-wrapper"><span class="time">Sep 2018 - Jun 2022</span></span>
+                            </div>
+                            <div class="desc">The place where my journey began. Learned what programming was about, made friends and established my foundations as a software developer</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="projects" class="win98popup shadow">
+            <div class="bar">
+                <p>My Projects</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="content">
+                <h1>Coming Soon</h1>
+            </div>
+        </div>
+        <div id="contactMe" class="win98popup shadow">
+            <div class="bar">
+                <p>Contact Me</p>
+                <button class="shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7"
+                        fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="content">
+                <form>
+                    <h3>Send Email</h3>
+                    <input type="text" id="name" placeholder="Your Name" autocomplete="off">
+                    <input type="email" id="email" placeholder="Your Email" autocomplete="off">
+                    <input type="text" id="subject" placeholder="Subject" autocomplete="off">
+                    <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <button id="send">Send</button>
+                </form>
+                <div class="links">
+                    <img src="./images/gmail.png" alt="gmail icon" />
+                    <a>gheorghe.3fr@gmail.com</a>
+                    <img src="./images/linkedin.png" alt="gmail icon" />
+                    <a href="linkedin.com/in/gheorghe-efros">linkedin.com/in/gheorghe-efros</a>
+                </div>
+            </div>
         </div>
         <!-- <div id="confirm" class="win98popup shadow" onclick="putConfirmOnTop()">
             <div class="bar">
@@ -86,17 +277,39 @@
     </main>
 
     <footer>
-        <button id="start-menu-logo" src="/images/start-menu-logo.jpg" alt="">
-
+        <div id="start-menu-logo">
+            <button />
+        </div>
+        <div id="aboutMeTask" class="item">
+            <img src="./images/my-computer.png" />
+            <p>About Me</p>
+        </div>
+        <div id="skillsTask" class="item">
+            <img src="./images/network.png" />
+            <p>My Skills</p>
+        </div>
+        <div id="workExperienceTask" class="item">
+            <img src="./images/computer.jpg" />
+            <p>My Work Experience</p>
+        </div>
+        <div id="projectsTask" class="item">
+            <img src="./images/dvd-drive.png" />
+            <p>My Projects</p>
+        </div>
+        <div id="contactMeTask" class="item">
+            <img src="./images/folder.png" />
+            <p>Contact Me</p>
+        </div>
     </footer>
 
-    <script src="/JS/main.js"></script>
-    <!-- <script src="/JS/confirm.js"></script> -->
     <script src="/JS/aboutMe.js"></script>
-    <!-- <script src="/JS/w2.js"></script>
-    <script src="/JS/w3.js"></script> -->
+    <script src="/JS/skills.js"></script>
+    <script src="/JS/workExperience.js"></script>
+    <script src="/JS/projects.js"></script>
+    <script src="/JS/contactMe.js"></script>
     <script src="/JS/centerWindow.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/JS/sendEmail.js"></script>
 </body>
 
 </html>

@@ -1,62 +1,62 @@
-var nameId1 = 'aboutMe';
+var nameId2 = 'skills';
 
-var popup1 = document.getElementById(nameId1);
+var popup2 = document.getElementById(nameId2);
 
-popup1.querySelector('button').onclick = closeWindow1;
+popup2.querySelector('button').onclick = closeWindow2;
 
-var icon1 =  document.getElementById(nameId1 + 'Icon');
-var task1 = document.getElementById(nameId1 + 'Task');
+var icon2 =  document.getElementById(nameId2 + 'Icon');
+var task2 = document.getElementById(nameId2 + 'Task');
 
-icon1.onclick = selectDiselectIcon1;
-icon1.ondblclick = showWindow1;
+icon2.onclick = selectDiselectIcon2;
+icon2.ondblclick = showWindow2;
 
-function selectDiselectIcon1(){
-    if (icon1.style.mixBlendMode != 'multiply') {
+function selectDiselectIcon2(){
+    if (icon2.style.mixBlendMode != 'multiply') {
         resetSelected();
-        icon1.style.mixBlendMode = 'multiply';
-        icon1.style.color = 'black';
+        icon2.style.mixBlendMode = 'multiply';
+        icon2.style.color = 'black';
     }
     else {
         resetSelected();
-        icon1.style.mixBlendMode = 'normal';
-        icon1.style.color = 'white';
+        icon2.style.mixBlendMode = 'normal';
+        icon2.style.color = 'white';
     }
 }
 
-function closeWindow1() {
-    popup1.style.display = 'none';
-    task1.style.display = 'none';
+function closeWindow2() {
+    popup2.style.display = 'none';
+    task2.style.display = 'none';
 }
 
-function showWindow1() {
+function showWindow2() {
     resetWindow();
-    popup1.style.display = 'flex';
-    task1.style.display = 'flex';
+    popup2.style.display = 'flex';
+    task2.style.display = 'flex';
     reportWindowSize();
 }
 
 // Make the DIV element draggable:
-dragElement1(popup1);
+dragElement2(popup2);
 
-function dragElement1(elmnt) {
+function dragElement2(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (elmnt.querySelector(".bar") != null) {
         // if present, the header is where you move the DIV from:
-        elmnt.querySelector(".bar").onmousedown = dragMouseDown1;
+        elmnt.querySelector(".bar").onmousedown = dragMouseDown2;
     }
 
-    function dragMouseDown1(e) {
+    function dragMouseDown2(e) {
         e = e || window.event;
         e.preventDefault();
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         pos4 = e.clientY;
-        document.onmouseup = closeDragElement1;
+        document.onmouseup = closeDragElement2;
         // call a function whenever the cursor moves:
-        document.onmousemove = elementDrag1;
+        document.onmousemove = elementDrag2;
     }
 
-    function elementDrag1(e) {
+    function elementDrag2(e) {
 
         //putPaintOnTop();
 
@@ -72,7 +72,7 @@ function dragElement1(elmnt) {
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     }
 
-    function closeDragElement1() {
+    function closeDragElement2() {
         // stop moving when mouse button is released:
         document.onmouseup = null;
         document.onmousemove = null;
